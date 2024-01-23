@@ -18,12 +18,98 @@
 			type="text/css"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- ---------------------------- font awesome ----------------------------- -->
+		<script
+			src="https://kit.fontawesome.com/e61df7a87d.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- ----------------------------- custom css ------------------------------ -->
 		<style>
 			.manrope-font {
 				font-family: "Manrope", sans-serif;
 			}
 		</style>
+		<!-- ------------------------ tailwind custom color ------------------------ -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primaryColor: "#ff4240",
+							menuItemColor: "#424247",
+						},
+					},
+				},
+			};
+		</script>
 	</head>
-	<body class="manrope-font"></body>
+	<body class="manrope-font">
+		<header class="max-w-[1170px] px-5 mx-auto lg:px-0">
+			<!-- ------------------------------- navbar -------------------------------- -->
+			<nav class="px-0 navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<div
+							tabindex="0"
+							role="button"
+							class="pl-0 btn btn-ghost lg:hidden"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-5 h-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16"
+								/>
+							</svg>
+						</div>
+						<!-- mobile view -->
+						<ul
+							tabindex="0"
+							class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+						>
+							<li><a>Home</a></li>
+							<li><a>About</a></li>
+							<li><a>Pages</a></li>
+							<li><a>Blog</a></li>
+							<li><a>Contact</a></li>
+						</ul>
+					</div>
+					<a
+						class="gap-0 px-0 text-2xl font-extrabold lg:text-4xl btn btn-ghost"
+					>
+						Hockey
+						<span class="text-primaryColor">’</span>
+						s
+					</a>
+				</div>
+				<div class="hidden navbar-center lg:flex">
+					<!-- desktop view -->
+					<ul class="px-1 text-base menu menu-horizontal text-menuItemColor">
+						<li><a>Home</a></li>
+						<li><a>About</a></li>
+						<li><a>Pages</a></li>
+						<li><a>Blog</a></li>
+						<li><a>Contact</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<i class="hidden mr-6 fa-solid fa-magnifying-glass lg:block"></i>
+					<a
+						class="text-lg font-bold text-white btn bg-primaryColor lg:text-xl"
+					>
+						Get Ticket
+					</a>
+				</div>
+			</nav>
+		</header>
+		<main class="max-w-[1170px] px-5 mx-auto lg:px-0"></main>
+		<footer></footer>
+	</body>
 </html>
