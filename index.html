@@ -35,8 +35,10 @@
 				theme: {
 					extend: {
 						colors: {
-							primaryColor: "#ff4240",
-							menuItemColor: "#424247",
+							primaryRed: "#ff4240",
+							menuItemDarkGray: "#424247",
+							sliderBoxBlack: "#131318",
+							sliderBoxGray: "#FFFFFF99",
 						},
 					},
 				},
@@ -46,7 +48,7 @@
 	<body class="manrope-font">
 		<header class="max-w-[1170px] px-5 mx-auto lg:px-0">
 			<!-- ------------------------------- navbar -------------------------------- -->
-			<nav class="px-0 navbar bg-base-100">
+			<nav class="px-0 my-6 navbar bg-base-100 lg:my-12">
 				<div class="navbar-start">
 					<div class="dropdown">
 						<div
@@ -82,16 +84,17 @@
 						</ul>
 					</div>
 					<a
+						href="#"
 						class="gap-0 px-0 text-2xl font-extrabold lg:text-4xl btn btn-ghost"
 					>
 						Hockey
-						<span class="text-primaryColor">’</span>
+						<span class="text-primaryRed">’</span>
 						s
 					</a>
 				</div>
 				<div class="hidden navbar-center lg:flex">
 					<!-- desktop view -->
-					<ul class="px-1 text-base menu menu-horizontal text-menuItemColor">
+					<ul class="px-1 text-base menu menu-horizontal text-menuItemDarkGray">
 						<li><a>Home</a></li>
 						<li><a>About</a></li>
 						<li><a>Pages</a></li>
@@ -102,12 +105,71 @@
 				<div class="navbar-end">
 					<i class="hidden mr-6 fa-solid fa-magnifying-glass lg:block"></i>
 					<a
-						class="text-lg font-bold text-white btn bg-primaryColor lg:text-xl"
+						class="h-auto px-6 py-4 text-lg font-bold text-white btn bg-primaryRed lg:text-xl"
 					>
 						Get Ticket
 					</a>
 				</div>
 			</nav>
+
+			<!-- -------------------------- banner or slider --------------------------- -->
+			<section class="relative mb-16 lg:mb-32">
+				<div class="w-full carousel rounded-2xl">
+					<!-- slide1 -->
+					<div id="slide1" class="relative w-full carousel-item">
+						<img src="./Images/1.png" class="w-full" />
+						<div
+							class="absolute bottom-0 flex gap-4 transform -translate-y-1/2 lg:left-8 lg:bottom-4 left-1/3"
+						>
+							<a
+								href="#slide2"
+								class="min-h-0 text-white border-none btn btn-circle bg-sliderBoxBlack"
+							>
+								❮
+							</a>
+							<a
+								href="#slide2"
+								class="min-h-0 text-white border-none btn btn-circle bg-sliderBoxBlack"
+							>
+								❯
+							</a>
+						</div>
+					</div>
+					<!-- slide2 -->
+					<div id="slide2" class="relative w-full carousel-item">
+						<img src="./Images/4.png" class="w-full" />
+						<div
+							class="absolute bottom-0 flex gap-4 transform -translate-y-1/2 lg:left-8 lg:bottom-4 left-1/3"
+						>
+							<a
+								href="#slide1"
+								class="min-h-0 text-white border-none btn btn-circle bg-sliderBoxBlack"
+							>
+								❮
+							</a>
+							<a
+								href="#slide1"
+								class="min-h-0 text-white border-none btn btn-circle bg-sliderBoxBlack"
+							>
+								❯
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Meet all the heroes box -->
+				<div
+					class="absolute p-4 mt-4 lg:p-8 lg:right-8 lg:bottom-9 bg-sliderBoxBlack rounded-2xl lg:mt-auto"
+				>
+					<h4 class="text-lg font-extrabold text-white lg:text-2xl">
+						Meet all the heroes from the field
+					</h4>
+					<p class="max-w-lg text-sm lg:mt-4 text-sliderBoxGray lg:text-base">
+						Hockey is a sport that requires skill, speed, and teamwork. Hockey
+						has a long and rich history, and has produced many heroes from the
+						field.
+					</p>
+				</div>
+			</section>
 		</header>
 		<main class="max-w-[1170px] px-5 mx-auto lg:px-0"></main>
 		<footer></footer>
