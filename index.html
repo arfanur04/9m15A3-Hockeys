@@ -39,6 +39,12 @@
 							menuItemDarkGray: "#424247",
 							sliderBoxBlack: "#131318",
 							sliderBoxGray: "#FFFFFF99",
+							horizontalBarGray20: "#13131833",
+							clubDescriptionGray60: "#13131899",
+							clubRed: "#FF4240",
+							clubGreen: "#49D293",
+							clubYellow: "#FFB546",
+							clubBlue: "#4C8DF1",
 						},
 					},
 				},
@@ -113,13 +119,13 @@
 			</nav>
 
 			<!-- -------------------------- banner or slider --------------------------- -->
-			<section class="relative mb-16 lg:mb-32">
+			<section class="relative mb-44 lg:mb-24">
 				<div class="w-full carousel rounded-2xl">
 					<!-- slide1 -->
 					<div id="slide1" class="relative w-full carousel-item">
 						<img src="./Images/1.png" class="w-full" />
 						<div
-							class="absolute bottom-0 flex gap-4 transform -translate-y-1/2 lg:left-8 lg:bottom-4 left-1/3"
+							class="absolute bottom-0 flex gap-4 transform -translate-y-1/2 lg:left-8 lg:bottom-2 left-1/3"
 						>
 							<a
 								href="#slide2"
@@ -139,7 +145,7 @@
 					<div id="slide2" class="relative w-full carousel-item">
 						<img src="./Images/4.png" class="w-full" />
 						<div
-							class="absolute bottom-0 flex gap-4 transform -translate-y-1/2 lg:left-8 lg:bottom-4 left-1/3"
+							class="absolute bottom-0 flex gap-4 transform -translate-y-1/2 lg:left-8 lg:bottom-2 left-1/3"
 						>
 							<a
 								href="#slide1"
@@ -170,8 +176,120 @@
 					</p>
 				</div>
 			</section>
+			<!-- <hr class="border border-[horizontalBarGray20] border-dashed" /> -->
+			<hr
+				class="border border-[horizontalBarGray20] border-dashed mb-6 lg:mb-8"
+			/>
 		</header>
-		<main class="max-w-[1170px] px-5 mx-auto lg:px-0"></main>
+		<main class="max-w-[1170px] px-5 mx-auto lg:px-0">
+			<!-- ---------------------- Professional hockeys club ---------------------- -->
+			<section class="mb-10 lg:mb-24">
+				<h2
+					class="text-xl font-extrabold text-center lg:text-4xl text-sliderBoxBlack"
+				>
+					Professional Hockeys Club
+				</h2>
+				<p
+					class="max-w-2xl mx-auto mt-4 text-sm font-medium text-center lg:text-base text-clubDescriptionGray60 lg:mt-6"
+				>
+					Meet all the heroes from the field and uncover their stories Explore.
+					our diverse program sections, tailored to cater to every interest and
+					passion
+				</p>
+				<hr
+					class="border border-[horizontalBarDarkGray] border-dashed mt-6 lg:mt-8 mb-6 lg:mb-12"
+				/>
+				<div
+					class="grid grid-cols-1 gap-6 text-center lg:grid-cols-4 justify-items-center"
+				>
+					<!-- prayer Facility -->
+					<div class="flex flex-col items-center max-w-80 lg:max-w-60">
+						<div
+							class="rotate-[135deg] radial-progress text-clubRed"
+							style="--value: 87; --size: 6rem; --thickness: 0.5rem"
+							role="progressbar"
+						>
+							<span
+								class="rotate-[225deg] text-sliderBoxBlack text-[28px] font-semibold"
+							>
+								87%
+							</span>
+						</div>
+						<h4 class="mt-6 mb-4 text-xl font-semibold text-sliderBoxBlack">
+							Prayer Facility
+						</h4>
+						<p class="text-base text-clubDescriptionGray60">
+							A quiet and clean environment that minimizes distractions and
+							noise
+						</p>
+					</div>
+					<!-- Experienced Coach -->
+					<div class="flex flex-col items-center max-w-80 lg:max-w-60">
+						<div
+							class="rotate-[135deg] radial-progress text-clubGreen"
+							style="--value: 95; --size: 6rem; --thickness: 0.5rem"
+							role="progressbar"
+						>
+							<span
+								class="rotate-[225deg] text-sliderBoxBlack text-[28px] font-semibold"
+							>
+								95%
+							</span>
+						</div>
+						<h4 class="mt-6 mb-4 text-xl font-semibold text-sliderBoxBlack">
+							Experienced Coach
+						</h4>
+						<p class="text-base text-clubDescriptionGray60">
+							Developing a clear vision and goals for the team and each player
+						</p>
+					</div>
+					<!-- Senior Player -->
+					<div class="flex flex-col items-center max-w-80 lg:max-w-60">
+						<div
+							class="rotate-[135deg] radial-progress text-clubYellow"
+							style="--value: 90; --size: 6rem; --thickness: 0.5rem"
+							role="progressbar"
+						>
+							<span
+								class="rotate-[225deg] text-sliderBoxBlack text-[28px] font-semibold"
+							>
+								90%
+							</span>
+						</div>
+						<h4 class="mt-6 mb-4 text-xl font-semibold text-sliderBoxBlack">
+							Senior Player
+						</h4>
+						<p class="text-base text-clubDescriptionGray60">
+							Hockey is a sport that demands a lot of physical, mental, and
+							emotional endurance.
+						</p>
+					</div>
+					<!-- Training Ground -->
+					<div class="flex flex-col items-center max-w-80 lg:max-w-60">
+						<div
+							class="rotate-[135deg] radial-progress text-clubBlue"
+							style="--value: 80; --size: 6rem; --thickness: 0.5rem"
+							role="progressbar"
+						>
+							<span
+								class="rotate-[225deg] text-sliderBoxBlack text-[28px] font-semibold"
+							>
+								80%
+							</span>
+						</div>
+						<h4 class="mt-6 mb-4 text-xl font-semibold text-sliderBoxBlack">
+							Training Ground
+						</h4>
+						<p class="text-base text-clubDescriptionGray60">
+							A set of goals, nets, and boards at either end of the field.
+						</p>
+					</div>
+				</div>
+			</section>
+			<hr
+				class="border border-[horizontalBarGray20] border-dashed mb-6 lg:mb-8"
+			/>
+		</main>
 		<footer></footer>
 	</body>
 </html>
